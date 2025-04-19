@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологические консультации</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">О службе психологической поддержки</a></li>
+                <li><a href="#questions">С какими вопросами можно обратиться</a></li>
+                <li><a href="#appointment">Интерактивная запись на консультацию</a></li>
+                <li><a href="#videos">Полезные видео</a></li>
+                <li><a href="login.html">Вход в личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О службе психологической поддержки</h2>
+            <p>Обучение в университете — это важный период в жизни, когда человек ищет себя, свой путь, свое предназначение, свое место. Этот поиск включает и выбор профессии, и реализацию своих творческих планов, и выстраивание дружеских или романтических отношений, общение с родителями, взаимодействие с преподавателями университета. Порой решение этих задач может потребовать много сил и внимания, сбить с толку, вызвать противоречие: что для меня сейчас важно, что происходит с моей жизнью, куда я иду и чего хочу? Увеличиваются нагрузки, а с ними и стресс.</p>
+            <p>Помочь студентам и сотрудникам Университета МИСИС расставить приоритеты, понять окружающих, а главное себя — в этом задача психологов службы «Точка опоры».</p>
+        </section>
+
+        <section id="questions">
+            <h2>С какими вопросами можно обратиться в службу психологической поддержки «Точка опоры»?</h2>
+            <p>Обращения принимаются специалистами службы по любому вопросу, касающемуся вашего психологического состояния:</p>
+            <ul>
+                <li>проблемы в учебе или общении;</li>
+                <li>неуверенность в себе, замкнутость;</li>
+                <li>чувство одиночества;</li>
+                <li>сложные отношения с друзьями, родителями;</li>
+                <li>неудовлетворенность своей жизнью;</li>
+                <li>поиск своего призвания и сферы профессиональной самореализации;</li>
+                <li>и другие темы.</li>
+            </ul>
+            <p>Психологическая служба проводит:</p>
+            <ul>
+                <li>индивидуальное консультирование;</li>
+                <li>консультирование студентов и выпускников по карьерному развитию;</li>
+                <li>психологическое тестирование, в том числе профнавигационное;</li>
+                <li>групповое и семейное консультирование;</li>
+                <li>составление индивидуального психологического портрета;</li>
+                <li>тренинги, мастер-классы, вебинары.</li>
+            </ul>
+        </section>
+
+        <section id="appointment">
+            <h2>Интерактивная запись на консультацию</h2>
+            <form id="appointmentForm">
+                <label for="specialist">Выберите специалиста:</label>
+                <select id="specialist" name="specialist">
+                    <option value="psychologist1">Психолог 1</option>
+                    <option value="psychologist2">Психолог 2</option>
+                </select>
+
+                <label for="date">Выберите дату:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="time">Выберите время:</label>
+                <input type="time" id="time" name="time">
+
+                <label for="format">Формат консультации:</label>
+                <select id="format" name="format">
+                    <option value="online">Онлайн</option>
+                    <option value="offline">Офлайн</option>
+                </select>
+
+                <label for="name">Имя Фамилия:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="group">Академическая группа:</label>
+                <input type="text" id="group" name="group">
+
+                <label for="phone">Телефон для связи:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="email">Корпоративная почта:</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Записаться</button>
+            </form>
+            <div id="appointmentMessage"></div>
+        </section>
+
+        <section id="videos">
+            <h2>Полезные видео</h2>
+            <!-- Вставьте сюда медиа плеер из ВК -->
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
