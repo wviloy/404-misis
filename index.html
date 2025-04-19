@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологические консультации</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-success text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Точка опоры</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О службе</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#questions">Вопросы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#appointment">Запись</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Видео</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Личный кабинет</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section id="about">
+            <h2>О службе психологической поддержки</h2>
+            <p>Обучение в университете — это важный период в жизни, когда человек ищет себя, свой путь, свое предназначение, свое место...</p>
+        </section>
+
+        <section id="questions" class="mt-4">
+            <h2>С какими вопросами можно обратиться</h2>
+            <p>Обращения принимаются специалистами службы по любому вопросу, касающемуся вашего психологического состояния:</p>
+            <ul>
+                <li>Проблемы в учебе или общении</li>
+                <li>Неуверенность в себе, замкнутость</li>
+                <li>Чувство одиночества</li>
+                <li>Сложные отношения с друзьями, родителями</li>
+                <li>Неудовлетворенность своей жизнью</li>
+                <li>Поиск своего призвания и сферы профессиональной самореализации</li>
+                <li>И другие темы</li>
+            </ul>
+            <p>Психологическая служба проводит:</p>
+            <ul>
+                <li>Индивидуальное консультирование</li>
+                <li>Консультирование студентов и выпускников по карьерному развитию</li>
+                <li>Психологическое тестирование, в том числе профнавигационное</li>
+                <li>Групповое и семейное консультирование</li>
+                <li>Составление индивидуального психологического портрета</li>
+                <li>Тренинги, мастер-классы, вебинары</li>
+            </ul>
+        </section>
+
+        <section id="appointment" class="mt-4">
+            <h2>Интерактивная запись на консультацию</h2>
+            <button class="btn btn-success" data-toggle="modal" data-target="#appointmentModal">Записаться на консультацию</button>
+
+            <!-- Модальное окно для записи на консультацию -->
+            <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="appointmentModalLabel">Запись на консультацию</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="appointmentForm">
+                                <div class="form-group">
+                                    <label for="specialist">Выберите специалиста:</label>
+                                    <select class="form-control" id="specialist" name="specialist">
+                                        <option value="psychologist1">Психолог 1</option>
+                                        <option value="psychologist2">Психолог 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Выберите дату:</label>
+                                    <input type="date" class="form-control" id="date" name="date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Выберите время:</label>
+                                    <input type="time" class="form-control" id="time" name="time">
+                                </div>
+                                <div class="form-group">
+                                    <label for="format">Формат консультации:</label>
+                                    <select class="form-control" id="format" name="format">
+                                        <option value="online">Онлайн</option>
+                                        <option value="offline">Офлайн</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Имя Фамилия:</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="group">Академическая группа:</label>
+                                    <input type="text" class="form-control" id="group" name="group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон для связи:</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Корпоративная почта:</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                                <button type="submit" class="btn btn-success">Записаться</button>
+                            </form>
+                            <div id="appointmentMessage" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="mt-4">
+            <h2>Полезные видео</h2>
+            <!-- Вставьте сюда медиа плеер из ВК --> <iframe src="https://vkvideo.ru/video_ext.php?oid=-36252065&id=456239571&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
